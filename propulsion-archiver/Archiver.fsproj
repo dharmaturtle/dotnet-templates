@@ -20,6 +20,7 @@
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.15.0" />
     <PackageReference Include="Microsoft.Azure.Cosmos.Direct" Version="3.15.3" />
 <!--    <PackageReference Include="Propulsion.Cosmos" Version="2.9.0" />-->
+    <PackageReference Include="prometheus-net.AspNetCore" Version="3.6.0" />
     <ProjectReference Include="..\..\equinox\src\Equinox.CosmosStore.Prometheus\Equinox.CosmosStore.Prometheus.fsproj" />
     <ProjectReference Include="..\..\propulsion\src\Propulsion.Cosmos\Propulsion.Cosmos.fsproj" />
     <ProjectReference Include="..\..\propulsion\src\Propulsion.CosmosStore\Propulsion.CosmosStore.fsproj" />

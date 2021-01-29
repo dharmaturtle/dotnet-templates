@@ -237,7 +237,7 @@ let run args = async {
 let main argv =
     try let args = Args.parse argv
         let appName = sprintf "pruner:%s" (args.ConsumerGroupName.Replace("ruben",""))
-        try Log.Logger <- LoggerConfiguration().Configure(appName, args.Verbose, args.CfpVerbose, args.MetricsEnabled).CreateLogger()
+        try Log.Logger <- LoggerConfiguration().Configure(appName, args.ConsumerGroupName, args.Verbose, args.CfpVerbose, args.MetricsEnabled).CreateLogger()
             try Configuration.initialize ()
                 run args |> Async.RunSynchronously
                 0
